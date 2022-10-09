@@ -1,8 +1,10 @@
 <?php
 
-require_once 'models/ducks/DomenicDuck.php';
-require_once 'models/ducks/RubberDuck.php';
-require_once 'models/ducks/WildDuck.php';
+use MyApp\ducks\DomenicDuck;
+use MyApp\ducks\RubberDuck;
+use MyApp\ducks\WildDuck;
+
+require_once realpath("vendor/autoload.php");
 
 
 
@@ -13,7 +15,7 @@ echo $wildDuck->sound();
 echo "<br>";
 echo "<br>";
 
-$domenicDuck = new DomesticDuck;
+$domenicDuck = new DomenicDuck;
 echo $domenicDuck->fly();
 echo "<br>";
 echo $domenicDuck->sound();

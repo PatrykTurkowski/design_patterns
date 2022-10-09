@@ -1,7 +1,11 @@
 <?php
-require_once 'Duck.php';
-require_once 'models/sounds/NotSound.php';
-require_once 'models/flyies/NotFly.php';
+
+namespace MyApp\ducks;
+
+
+use MyApp\flyies\NotFly;
+use MyApp\sounds\NotSound;
+
 class RubberDuck extends Duck
 {
     public function fly(): string

@@ -1,5 +1,8 @@
 <?php
-require_once 'models/interfaces/SoundInterface.php';
+
+namespace MyApp\sounds;
+
+use MyApp\interfaces\SoundInterface;
 
 class KwaSound implements SoundInterface
 {

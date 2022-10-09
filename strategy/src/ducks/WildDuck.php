@@ -1,7 +1,11 @@
 <?php
-require_once 'Duck.php';
-require_once 'models/sounds/Kra.php';
-require_once 'models/flyies/TopFly.php';
+
+namespace MyApp\ducks;
+
+
+use MyApp\flyies\TopFly;
+use MyApp\sounds\KraSound;
+
 class WildDuck extends Duck
 {
     public function fly(): string

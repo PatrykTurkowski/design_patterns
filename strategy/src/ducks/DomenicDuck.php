@@ -1,9 +1,12 @@
 <?php
 
-require_once 'Duck.php';
-require_once 'models/sounds/Kwa.php';
-require_once 'models/flyies/MidFly.php';
-class DomesticDuck extends Duck
+namespace MyApp\ducks;
+
+use MyApp\flyies\MidFly;
+use MyApp\sounds\KwaSound;
+
+
+class DomenicDuck extends Duck
 {
     public function fly(): string
     {

@@ -1,6 +1,12 @@
 <?php
-require_once('models/interfaces/FlyInterface.php');
-require_once('models/interfaces/SoundInterface.php');
+
+namespace MyApp\ducks;
+
+use MyApp\interfaces\SoundInterface;
+use MyApp\interfaces\FlyInterface;
+
+
+
 abstract class Duck implements FlyInterface, SoundInterface
 {
 

@@ -1,5 +1,8 @@
 <?php
-require_once 'models/interfaces/FlyInterface.php';
+
+namespace MyApp\flyies;
+
+use MyApp\interfaces\FlyInterface;
 
 class TopFly implements FlyInterface
 {
