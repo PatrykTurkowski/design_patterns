@@ -1,22 +1,26 @@
-<link rel="stylesheet" href="style.css">
 <?php
-require_once('model/Weather.php');
-require_once('model/YourWeather.php');
-require_once('model/WeatherWoman.php');
+
+use App\Weather;
+use App\WeatherWomen;
+use App\YourWeather;
+
+require_once realpath("vendor/autoload.php");
 
 
-$weatherWoman = new WeatherWomen;
+
+
+$weatherWomen = new WeatherWomen;
 $yourWeather = new YourWeather;
 $weather = new Weather;
 
 $weather->attach($yourWeather);
 echo '<br>';
 echo '<br>';
-$weather->attach($weatherWoman);
+$weather->attach($weatherWomen);
 
 $weather->someBusinessLogic();
 
-$weather->detach($weatherWoman);
+$weather->detach($weatherWomen);
 echo '<br>';
 echo '<br>';
 $weather->someBusinessLogic();

@@ -1,8 +1,8 @@
 <?php
 
-use MyApp\ducks\DomenicDuck;
-use MyApp\ducks\RubberDuck;
-use MyApp\ducks\WildDuck;
+use App\ducks\DomenicDuck;
+use App\ducks\RubberDuck;
+use App\ducks\WildDuck;
 
 require_once realpath("vendor/autoload.php");
 

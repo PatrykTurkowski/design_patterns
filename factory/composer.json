@@ -1,0 +1,17 @@
+
+{
+    "name": "factory/factory",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "patryk",
+            "email": "patryk.turkowski21@gmail.com"
+        }
+    ],
+    "require": {}
+}
+

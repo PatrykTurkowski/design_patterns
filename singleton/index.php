@@ -3,11 +3,10 @@
 
 class Singleton
 {
-    private static $isActiveSingleton;
+    private static $singleton;
 
     private function __construct()
     {
-        echo 'I\'m singleton, hello';
     }
 
     protected function __clone()
@@ -21,10 +20,10 @@ class Singleton
 
     public static function issetSingleton()
     {
-        if (!isset(self::$isActiveSingleton)) {
-            self::$isActiveSingleton = new Singleton;
+        if (!isset(self::$singleton)) {
+            self::$singleton = new Singleton;
         } else {
-            return self::$isActiveSingleton;
+            return self::$singleton;
         }
     }
 }

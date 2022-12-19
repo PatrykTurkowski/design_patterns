@@ -7,33 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInit8aae85a543c05d7f361caa2f4e355095
 {
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'A' => 
         array (
-            'MyApp\\' => 6,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'MyApp\\' => 
+        'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'MyApp\\ducks\\DomenicDuck' => __DIR__ . '/../..' . '/src/ducks/DomenicDuck.php',
-        'MyApp\\ducks\\Duck' => __DIR__ . '/../..' . '/src/ducks/Duck.php',
-        'MyApp\\ducks\\RubberDuck' => __DIR__ . '/../..' . '/src/ducks/RubberDuck.php',
-        'MyApp\\ducks\\WildDuck' => __DIR__ . '/../..' . '/src/ducks/WildDuck.php',
-        'MyApp\\flyies\\MidFly' => __DIR__ . '/../..' . '/src/flyies/MidFly.php',
-        'MyApp\\flyies\\NotFly' => __DIR__ . '/../..' . '/src/flyies/NotFly.php',
-        'MyApp\\flyies\\TopFly' => __DIR__ . '/../..' . '/src/flyies/TopFly.php',
-        'MyApp\\interfaces\\FlyInterface' => __DIR__ . '/../..' . '/src/interfaces/FlyInterface.php',
-        'MyApp\\interfaces\\SoundInterface' => __DIR__ . '/../..' . '/src/interfaces/SoundInterface.php',
-        'MyApp\\sounds\\KraSound' => __DIR__ . '/../..' . '/src/sounds/KraSound.php',
-        'MyApp\\sounds\\KwaSound' => __DIR__ . '/../..' . '/src/sounds/KwaSound.php',
-        'MyApp\\sounds\\NotSound' => __DIR__ . '/../..' . '/src/sounds/NotSound.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

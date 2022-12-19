@@ -1,7 +1,17 @@
+
 {
+    "name": "strategy/strategy",
     "autoload": {
         "psr-4": {
-            "MyApp\\":"src/"
+            "App\\": "app/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "patryk",
+            "email": "patryk.turkowski21@gmail.com"
+        }
+    ],
+    "require": {}
 }
+
